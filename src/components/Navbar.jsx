@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const handleBurger = () => {
     setBurger(!burger);
-  }
+  };
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
@@ -21,9 +21,19 @@ const Navbar = () => {
         <li className="p-5 text-xl">Contact</li>
       </ul>
       <div onClick={handleBurger} className="block md:hidden">
-        {!burger ? <AiOutlineClose size={25} /> : <AiOutlineAlignRight size={25}/>}
+        {!burger ? (
+          <AiOutlineClose size={25} />
+        ) : (
+          <AiOutlineAlignRight size={25} />
+        )}
       </div>
-      <div className={!burger ? "fixed left-0 top-0 border-r h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500" : 'fixed left-[-100%] ease-in-out duration-500'}>
+      <div
+        className={
+          !burger
+            ? "fixed left-0 top-0 border-r h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-10"
+            : "fixed left-[-100%] ease-in-out duration-500"
+        }
+      >
         <h1 className="w-full text-4xl font-bold text-[#00df9a] m-4">
           Data Extender
         </h1>
