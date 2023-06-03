@@ -3,7 +3,7 @@ import React from "react";
 function Newsletter() {
   return (
     <div className="w-full py-16 text-white px-4">
-      <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3">
+      <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3" id="tarif">
         <div className="lg:col-span-2 my-4">
           <h1 className="md:text-3xl sm:text-2xl text-xl font-bold md:py-4 py-2">
             Want tips & tricks to optimize your flow?
