@@ -21,7 +21,13 @@ function Newsletter() {
               Notify Me
             </button>
           </div>
-          <p>We care about the protection of your data. Read our <span className="text-[#00df9a] underline cursor-pointer">Privacy Policy</span>.</p>
+          <p>
+            We care about the protection of your data. Read our
+            <span className="text-[#00df9a] underline cursor-pointer">
+              Privacy Policy
+            </span>
+            .
+          </p>
         </div>
       </div>
     </div>
